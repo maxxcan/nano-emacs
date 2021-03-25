@@ -33,11 +33,11 @@
     (message
      (concat
       (propertize "\n" 'face '(:height 0.4))
-      " [C-x C-f] Open  [M-w] Copy   [C-w] Cut   [C-s] Search           "
-      (propertize "[C-g]   Cancel" 'face 'bold)
+      " [C-x C-f] Abrir   [M-w] Copiar [C-w] Cortar    [C-s] Buscar   [C-x d] Dired        "
+      (propertize "[C-g]     Cancelar" 'face 'bold)
       "\n"
-      " [C-x C-s] Save  [C-y] Paste  [C-/] Undo  [M-x] Command          "
-      (propertize "[C-x C-c] Quit" 'face 'bold)
+      " [C-x C-s] Salvar  [C-y] Pegar  [C-/] Deshacer  [M-x] Comando                       "
+      (propertize "[C-x C-c] Salir" 'face 'bold)
       (propertize "\n " 'face '(:height 0.5))))
     (sit-for 30)))
 
@@ -46,7 +46,7 @@
 (define-key nano-help-mode-map (kbd "q") #'kill-current-buffer)
 (defun nano-help ()
   (interactive)
-  (find-file-read-only (locate-file "quick-help.org" load-path))
+  (find-file-read-only (locate-file "quick-help-es.org" load-path))
   (nano-help-mode)
   (setq-local org-confirm-elisp-link-function nil))
 
@@ -60,8 +60,8 @@
    (concat
     (if (display-graphic-p) (propertize "\n " 'face '(:height 0.4)))
     (propertize (concat
-                 "Type M-p for quick help, M-h for help."
-                 " M stands for Alt, Command or (Esc)ape.")
+                 "Pulsa M-p para una ayuda rápida, M-h para la ayuda."
+                 " M es para Alt, Command or (Esc)ape.")
                 'face 'nano-face-faded)
     (if (display-graphic-p) (propertize "\n " 'face '(:height 0.5))))))
 
