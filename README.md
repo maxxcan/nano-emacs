@@ -139,3 +139,8 @@ modules.
   > This package provised an experimental command line prompt in the
   > header line. It has not history nor completion but can be used for
   > one line input such as org-capture.
+
+###### Explanation of this fork
+
+> This fork is a spanish version of the original nano-emacs. Thus add simple changes like add
+> a user config file
