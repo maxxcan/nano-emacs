@@ -142,5 +142,5 @@ modules.
 
 #### Explanation of this fork
 
-> This fork is a spanish version of the original nano-emacs. Thus add simple changes like add
-> a user config file
+  > This fork is a spanish version of the original nano-emacs. Thus add simple changes like add
+  > a user config file
