@@ -1,0 +1,65 @@
+
+*GNU Emacs / N Λ N O*                              /Presiona q para salir/
+
+  Aprende atajos de teclado básicos..........................[[elisp:help-with-tutorial][ Tutorial ]]
+  Resumen de las características de Emacs en[[https://gnu.org][ gnu.org ]].....[[https://www.gnu.org/software/emacs/tour][ Tour Guiado ]]
+  Obtener ayuda de los usuarios de Emacs..............[[https://lists.gnu.org/mailman/listinfo/help-gnu-emacs][ Lista de correo ]]
+  Leer toda la documentación ...........................[[info:emacs][ Documentación ]]
+ 
+*Comandos rápidos*                   /C: Control, M: alt, command o Escape/
+
+  Salvar .................. =C-x C-s=    Ayuda ..................... =C-h=
+  Salvar como ............. =C-x C-w=    Cancelar .................. =C-g=
+  Abrir un nuevo fichero .. =C-x C-f=    Deshacer .................. =C-/=
+  Abrir recientes ......... =C-x C-r=    Cerrar buffer ........... =C-x k=
+  Abrir directorio .......... =C-x d=    Salir ................. =C-x C-c=
+
+*Otros comandos*                                     /[[info:emacs#Key Bindings][        Otros atajos ]]/
+
+  Buscar ...................... =C-s=    Ir a la línea .......... =M-g M-g=
+  Reemplazar .................. =M-%=    Ejecutar ................... =M-x=
+  
+  Ir al inicio del buffer ..... =M-<=    Ir al fin del buffer ....... =M->=
+  Ir al inicio de la línea .... =C-a=    Ir al fin de la línea ...... =C-e=
+
+  Marca ..................... =C-spc=    Copiar desde la marca....... =M-w=
+  Eliminar desde la marca...... =C-w=    Eliminar desde el cursor.... =C-k=
+  Pegar ....................... =C-y=    Pegar más antiguo ...... =C-y M-y=
+
+*Buffers*    
+
+/Un buffer es una interfaz entre Emacs y un fichero o proceso/
+
+  Listar buffers .........  =C-x C-b=   Ir al buffer anterior ..... =C-x b=
+  Eliminar un buffer .. ....  =C-x k=
+
+*Ventanas* 
+
+/Una ventana es una vista sobre un buffer/
+
+  Dividir en vertical .... =C-x 3=      Dividir en horizontal ..... =C-x 2=
+  Eliminar la ventana .... =C-x 0=      Eliminar las demás ........ =C-x 1=
+
+
+*Preferencias rápidas*                            /[[elisp:(customize-group 'emacs)][ Todas las preferencias ]]/
+
+ [[elisp:menu-set-font][ Seleccionar ]] fuente por defecto             [[elisp:display-line-numbers-mode][ Cambiar ]]números de línea
+ [[elisp:tool-bar-mode][ Cambiar ]]  barra de herramientas             [[elisp:toggle-truncate-lines][ Cambiar ]]ruptura de línea
+ [[elisp:scroll-bar-mode][ Cambiar ]]        barra de scroll           [[elisp:blink-cursor-mode][ Cambiar ]]cursor parpadeante
+ [[elisp:menu-bar-mode][ Cambiar ]]          barra de menú      Selec. cursor:[[elisp:(set-default 'cursor-type '(hbar . 2))][ HBar ]]|[[elisp:(set-default 'cursor-type '(bar . 2))][ VBar ]]|[[elisp:(set-default 'cursor-type 'box)][ Box ]]
+  
+*Instalar algunos paquetes*                            /[[elisp:(package-list-packages)][ Lista de paquetes ]]/
+
+ [[elisp:(package-install 'magit)][ magit ]]...................................... El mejor gestor para Git
+ [[elisp:(package-install 'projectile)][ projectile ]] ................ Maneja y navega por proyectos fácilmente
+ [[elisp:(package-install 'helm)][ helm ]]................... An Emacs incremental and narrowing framework
+ [[elisp:(package-install 'flycheck)][ flycheck ]]....................................... Comprobar ortografía
+ [[elisp:(package-install 'company)][ company ]] ..................... Framework para autocompletado de texto
+ [[elisp:(package-install 'markdown-mode)][ markdown-mode ]] .................................. Markdown para Emacs
+ [[elisp:(package-install 'popup)][ popup ]]................................... Ventajas flotantes en Emacs
+  [[elisp:(package-install 'evil-mode)][evil-mode]] ................................ Emacs para usuarios de Vim
+  [[elisp:(package-install 'evil-tutor)][evil-tutor]] .......................................... Tutorial de Vim
+
+            /----------------------------------------------------------/
+            *Nota*: Los paquetes desde el repositorio oficial de[[https://elpa.gnu.org/][ GNU Elpa ]]
+                  o desde el repositorio no oficial de from[[https://melpa.org][ MELPA ]]
